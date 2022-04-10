@@ -6,7 +6,7 @@ import Home from "./routes/Home";
 function App() {
   return (
     <Router>
-      <Switch>
+      <Switch basename={process.env.PUBLIC_URL}>
         <Route path="/hello">
           <h1>Hello!</h1>
         </Route>
